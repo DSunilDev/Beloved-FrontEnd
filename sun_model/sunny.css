@@ -1,0 +1,63 @@
+body
+{
+    background-color: skyblue;
+    animation-name:skyt;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+.sun
+{
+    background-color: yellow;
+    border-radius: 180px;
+    width:70px;
+    height:60px;
+    animation-name:sunmotion;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+.grass
+{
+    background-color: greenyellow;
+    width: 1990px;
+    height:900px
+}
+
+@keyframes skyt
+{
+0%
+{
+    background-color: aqua;
+}
+25%
+{
+    background-color: blue;
+}
+75%
+{
+    background-color: aquamarine;
+}
+100%
+{
+    background-color: black;
+}
+}
+
+
+@keyframes sunmotion
+{
+    25%
+    {
+        transform:translate(50px,-20px);
+    }
+    75%
+    {
+        transform:translate(1900px,0);
+    }
+}
