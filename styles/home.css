@@ -1,0 +1,122 @@
+body
+{
+    color:green;
+}
+ul{
+    color: blue;
+}
+
+
+p{
+    width: 50px;
+    height: 60px;
+}
+.right
+{
+    background-color: aqua;
+
+}
+
+.left
+{
+    cursor: pointer;
+    background-color: aquamarine;
+}
+
+.top
+{
+    cursor:pointer;
+    background-color: black;
+}
+
+
+
+.right:hover{
+    transform: rotate(0.25turn);
+    background-color:bisque ;
+    transform-origin: left top;
+    transition-duration: 1.8s;
+    transition-property: transform,background-color;
+}
+
+.left:hover{
+    transition-property:background-color,opacity;
+    transition-duration: 2s;
+    background-color: red; 
+}
+
+
+.he{
+background-color: brown;
+}
+
+
+.he:hover{
+background-color: rgb(38, 126, 203);
+transform: translateY(200px);
+transition: all 3s ease-in 2s;
+}
+
+
+.top:hover{
+    background-color: blue;
+    border-radius:45px;
+    transition-property: background-color,border-radius;
+    transform:rotate(50deg);
+    transition-duration: 5s,2s;
+} 
+
+.img
+{
+    display: inline;
+}
+
+.or{
+    background-color: azure;
+}
+
+
+.or:hover{
+    width:200px;
+    height:87px;
+    background-color: orange;
+    animation-name: Sunil;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0.3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Sunil 
+{
+ 0%
+ {
+    font-size: small;
+    color: blue;
+ }   
+ 25%
+ {
+    font-size: medium;
+    color:blueviolet;
+ }
+ 50%
+ {
+    font-size: large;
+    color:aqua;
+ }
+ 75%
+ {
+    font-size: larger;
+    font-weight: bold;
+    color: black;
+ }
+ 100%
+ {
+    font-size: larger;
+    font-weight: bolder;
+    color:grey;
+ }
+}
+
+
+
