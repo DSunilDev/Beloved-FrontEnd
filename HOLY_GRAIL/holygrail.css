@@ -1,0 +1,63 @@
+header,footer
+{
+    display: flex;
+    background: blue;
+    flex-direction: row;
+    justify-content: space-between;
+    flex:1 1 200px;
+    min-height: 70px;
+}
+
+footer
+{
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-style:oblique;
+    font-size:larger;
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    min-height: 850px;
+}
+
+nav{
+    background-color: bisque;
+    min-width: 20%;
+}
+
+siden
+{
+    background-color: blueviolet;
+    min-width: 60%;
+}
+
+ad{
+    background-color: rgb(188, 186, 50);
+    min-width: 20%;
+}
+
+@media(max-width:640px)
+{
+main
+{
+    flex-direction: column;
+    flex-grow: 2;
+}    
+siden
+{
+    order:-2;
+    flex-grow: 3;
+}
+}
+
+a:hover{
+    color:black;
+    font-style: italic;   
+}
