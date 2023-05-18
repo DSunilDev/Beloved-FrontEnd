@@ -1,0 +1,62 @@
+.container
+{
+    border:12px solid red;
+    width:500px;
+    height:400px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;  
+}
+
+.o{
+    flex:200px 2 2;
+    background-color: aliceblue;
+}
+
+.t{
+    flex:200px 2 2;
+    background-color: aqua;
+    order:-1;
+}
+.th{
+    flex:200px 2 2;
+    background-color: blue;
+}
+
+.side
+{
+    height:500px;
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+    justify-content: space-between;
+}
+
+.bott
+{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+    text-decoration: solid;
+    font-style: italic;
+    font-weight: bold;
+}
+
+a:hover
+{
+    color: black;
+    font-style:oblique;
+    transform: translateX(4px);
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    transform-origin: left;
+}
+
