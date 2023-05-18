@@ -1,0 +1,43 @@
+body{
+    background-color: whitesmoke;
+}
+
+.loader
+{
+    width:165px;
+    height:165px;
+    margin-top: 100px;
+    margin-bottom: 180px;
+    background-color: aliceblue;
+    border:35px solid grey;
+    border-top-color:green ;
+    border-bottom-color:brown;
+    border-radius: 150px;
+    animation-name:loader;
+    animation-duration:5s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+
+@keyframes loader
+{
+    0%
+    {
+        transform:rotate(0deg);
+    }
+    50%
+    {
+        transform:rotate(360deg);
+    }
+    100%
+    {
+        transform: rotate(720deg);
+    }
+}
+
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
