@@ -1,0 +1,1 @@
+This holy grail is focudes to make General structure of webpages..
