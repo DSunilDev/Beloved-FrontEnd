@@ -31,6 +31,14 @@ function number(event)
     let venteredText=enteredText.length;
     let min=max-venteredText;
     livechange.textContent=min;
+    if(min<=10)
+    {
+        secondTextBox.classList.add("warn")
+    }
+    else
+    {
+        secondTextBox.classList.remove("warn")
+    }
 }
 secondTextBox.addEventListener('input',number)
 
