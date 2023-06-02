@@ -76,6 +76,30 @@ function color()
 
 highlight.addEventListener('click',color)
 
+/*For in Loop for the Accessing of Objects*/
+const duser={
+    name:'Sunil',
+    Age:"19",
+    Ambition:"SDE"
+};
+
+
+const disp=document.getElementById("#disp")
+
+function userdisp()
+{
+    const po=document.getElementById("#po");
+    for(const data in duser)
+    {
+        const dummy=document.createElement("li");
+        const userdata=data.toUpperCase()+';'+duser[data];
+        dummy.textContent=userdata;
+        po.append(dummy);
+    }
+}
+
+disp.addEventListener('click',userdisp);
+
 
 
 
