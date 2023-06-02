@@ -42,10 +42,39 @@ function number(event)
 }
 secondTextBox.addEventListener('input',number)
 
+/* Sum of numbers Calculation*/
 
+let a=document.getElementById("#ac")
+let Sum=document.getElementById("#calculatesum")
+let Res=document.getElementById("#result")
+function SumofNumbers()
+{
+    let UserValue=Sum.value;
+    let result=0;
+    for (let j=0;j<=UserValue;j++)
+    {
+     result=result+j;
+    }
+   Res.textContent=result;
+}
 
+a.addEventListener('click',SumofNumbers)
+Sum.addEventListener('input',SumofNumbers)
 
+/* Highlight links using the For of Loop */
 
+let highlight=document.getElementById("#high")
+
+function color()
+{
+    let anchor=document.querySelectorAll("#highlight a")
+    for(let anchore of anchor)
+    {
+        anchore.classList.add("highlight")
+    }
+}
+
+highlight.addEventListener('click',color)
 
 
 

@@ -3,3 +3,31 @@
     background-color: darkred;
     color: lightcoral;
 }
+
+label
+{
+    display:block;
+}
+
+#result
+{
+    background-color: rgb(203, 27, 27);
+    width:300px;
+    height:145px;
+}
+
+a 
+{
+  text-decoration: none;
+    font-size: large;
+}
+
+a.highlight 
+{
+    text-decoration: none;
+    color:tomato;
+    background-color: yellow;
+    font-weight: bold;
+    font-style: italic;
+    padding:0.25rem;
+}
