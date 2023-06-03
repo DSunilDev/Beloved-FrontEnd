@@ -38,9 +38,22 @@ body{
 {
     background-color:greenyellow;
     color: aliceblue;
-    width:200px;
-    height: 89px;
+    width:130px;
+    height: 49px;
     border-radius: 25px;
     box-shadow: 3px lightcyan;
     text-align: center;
+    cursor:pointer;
+    font:inherit;
+}
+
+.start
+{
+    width:110px;
+    height:72px;
+    cursor:pointer;
+    font:inherit;
+    background-color: white;
+    border-radius: 23px;
+    box-shadow: 2px solid grey;
 }

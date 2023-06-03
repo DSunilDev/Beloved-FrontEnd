@@ -7,6 +7,7 @@
     background-color:white;
     padding:1rem;
     box-shadow: 0 2px 8 px rebeccapurple;
+    display:none;
 }
 
 @media(max-width:48rem)
@@ -16,3 +17,17 @@
         width:40rem;
     }
 }
+
+
+#backdrop
+{
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color:rgba(0,0,0,0.05);
+    display: none;
+}
+
+

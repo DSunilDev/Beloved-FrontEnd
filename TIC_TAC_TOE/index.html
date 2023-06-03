@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TIC TAC TOE </title>
     <link rel="stylesheet" href="/TIC_TAC_TOE/styles/style.css">
-    <link rel="stylesheet" href="/TIC_TAC_TOE/styles/overlay.css"
+    <link rel="stylesheet" href="/TIC_TAC_TOE/styles/overlay.css">
+    <link rel="stylesheet" href="/TIC_TAC_TOE/styles/configuration.css">
 </head>
 <body>
+    <div id="backdrop"></div>
     <header id="main-header">
         <center><h1>TIC TAC TOE</h1>
             <p>Welcome to the tic tac toe game !</p>
     </center>
         </header>
     <main>
-        <aside class="model">
+        <aside class="model" id="config-overlay">
             <h2>Type your Name</h2>
             <form>
-                <div>
+                <div class="form-control">
                     <label for="playername">Player NAme</label>
                     <input type="text" placeholder="Name" name="playername" id="playername" autocomplete="off">
                 </div>
@@ -28,7 +30,7 @@
                 </div>
             </form>
         </aside>
-        <section id="#game-configuration">
+        <section id="game-configuration">
 <ol>
     <li>
         <article>
@@ -47,8 +49,10 @@
         </article>
     </li>
 </ol>
-<button class="btn">Start Game</button>
-        </section>
+<center>
+<button class="start">Start Game</button>
+</center>        
+</section>
         <section id="#active-game">
             <h3>You won <span id="winner-game"></span></h3>
 <p>Its your Turn <span id="active-player-name">Player Name</span></p>
