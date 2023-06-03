@@ -32,3 +32,15 @@ body{
     border-color: transparent;
     color:yellowgreen
 }
+
+
+.bttn
+{
+    background-color:greenyellow;
+    color: aliceblue;
+    width:200px;
+    height: 89px;
+    border-radius: 25px;
+    box-shadow: 3px lightcyan;
+    text-align: center;
+}

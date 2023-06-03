@@ -1,0 +1,18 @@
+.model
+{
+    position:fixed;
+    top:20%;
+    left:30%;
+    width:40%;
+    background-color:white;
+    padding:1rem;
+    box-shadow: 0 2px 8 px rebeccapurple;
+}
+
+@media(max-width:48rem)
+{
+    .model{
+        left:calc(50% - 20rem);
+        width:40rem;
+    }
+}
