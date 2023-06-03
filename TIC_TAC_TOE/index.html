@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE </title>
+    <link rel="stylesheet" href="/TIC_TAC_TOE/styles/style.css">
+</head>
+<body>
+    <header id="main-header">
+        <center><h1>TIC TAC TOE</h1>
+            <p>Welcome to the tic tac toe game !</p>
+    </center>
+        </header>
+    <main>
+        <aside>
+            <h2>Type your Name</h2>
+            <form>
+                <div>
+                    <label for="playername">Player NAme</label>
+                    <input type="text" placeholder="Name" name="playername" id="playername" autocomplete="off">
+                </div>
+                <div>
+                    <button type="button" class="btn">Cancel</button>
+                    <button type="submit" class="btn">Submit </button>
+                </div>
+            </form>
+        </aside>
+        <section id="#game-configuration">
+<ol>
+    <li>
+        <article>
+            <h3>Player 1</h3>
+            <h4>Player Name</h4>
+            <p>X</p>
+            <button>Edit</button>
+        </article>
+    </li>
+    <li>
+        <article>
+            <h3>Player 2</h3>
+            <h4>Player Name</h4>
+            <p>O</p>
+            <button>Edit</button>
+        </article>
+    </li>
+</ol>
+<button class="btn">Start Game</button>
+        </section>
+        <section id="#active-game">
+            <h3>You won <span id="winner-game"></span></h3>
+<p>Its your Turn <span id="active-player-name">Player Name</span></p>
+<ol>  <!--Actual Gaming Environment-->
+    <li></li>
+    <li></li>
+    <li></li>
+
+    <li></li>
+    <li></li>
+    <li></li>
+
+    <li></li>
+    <li></li>
+    <li></li>
+</ol>
+
+        </section>
+    </main>
+</body>
+</html>
