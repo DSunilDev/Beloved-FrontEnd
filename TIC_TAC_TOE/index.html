@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="/TIC_TAC_TOE/styles/style.css">
     <link rel="stylesheet" href="/TIC_TAC_TOE/styles/overlay.css">
     <link rel="stylesheet" href="/TIC_TAC_TOE/styles/configuration.css">
+    <link rel="stylesheet" href="/TIC_TAC_TOE/styles/game.css">
+    <script src="scripts/config.js" defer></script>
+    <script src="scripts/game.js" defer></script>
+    <script src="scripts/app.js" defer></script>
 </head>
 <body>
     <div id="backdrop"></div>
@@ -22,30 +26,31 @@
             <form>
                 <div class="form-control">
                     <label for="playername">Player NAme</label>
-                    <input type="text" placeholder="Name" name="playername" id="playername" autocomplete="off">
+                    <input type="text" placeholder="Name" name="playername" id="playername" autocomplete="off" required>
+                    <p id="error"></p>
                 </div>
                 <div>
-                    <button type="button" class="btn">Cancel</button>
-                    <button type="submit" class="btn">Submit </button>
+                    <button type="reset" class="btn" id="cancel">Cancel</button>
+                    <button type="submit" class="btn" id="submit">Submit </button>
                 </div>
             </form>
         </aside>
         <section id="game-configuration">
 <ol>
     <li>
-        <article>
+        <article id="player-1-data">
             <h3>Player 1</h3>
             <h4>Player Name</h4>
             <p>X</p>
-            <button class="bttn">Edit </button>
+            <button class="bttn" id="player1edit" data-player="1">Edit </button>
         </article>
     </li>
     <li>
-        <article>
+        <article id="player-2-data">
             <h3>Player 2</h3>
             <h4>Player Name</h4>
             <p>O</p>
-            <button class="bttn">Edit</button>
+            <button class="bttn" id="player2edit" data-player="2">Edit</button>
         </article>
     </li>
 </ol>
@@ -53,10 +58,12 @@
 <button class="start">Start Game</button>
 </center>        
 </section>
-        <section id="#active-game">
-            <h3>You won <span id="winner-game"></span></h3>
+        <section id="active-game">
+            <article id="gameover">
+            <h3>You won <span id="winner-game">Player NAme!</span></h3>
+            </article>
 <p>Its your Turn <span id="active-player-name">Player Name</span></p>
-<ol>  <!--Actual Gaming Environment-->
+<ol id="game-board">  <!--Actual Gaming Environment-->
     <li></li>
     <li></li>
     <li></li>
