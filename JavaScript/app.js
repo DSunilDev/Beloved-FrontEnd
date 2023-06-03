@@ -89,6 +89,7 @@ const disp=document.getElementById("#disp")
 function userdisp()
 {
     const po=document.getElementById("#po");
+    po.innerHTML='';
     for(const data in duser)
     {
         const dummy=document.createElement("li");
@@ -100,9 +101,40 @@ function userdisp()
 
 disp.addEventListener('click',userdisp);
 
+/*appied Conditionals Successfully*/
 
+/*While loop Test Condiiton*/
 
+let dicebutton=document.getElementById("#db")
+let dicedisplay=document.getElementById("#dplace")
+let diceroll=document.getElementById("#roll")
 
+function rolldice()
+{
+    return Math.floor(Math.random()*6)+1;
+}
+
+dicedisplay.innerHTML='';
+
+function RollCalculate()
+{
+    let NoRolls=diceroll.value; /*Got the Value from User*/
+    let dvalue=false;
+    let times=0;
+    while(!dvalue)
+    {
+        times++;
+        let Value=rolldice()
+        dvalue=NoRolls==Value   /*Checking the Dice and User Value */
+        let ResultDisplay=document.createElement('li')
+        ResultDisplay.textContent="Roll"+times+":"+Value;
+        dicedisplay.append(ResultDisplay);
+    }
+    
+}
+dicebutton.addEventListener('click',RollCalculate)
+
+/*Analyzed While loop */
 
 
 
