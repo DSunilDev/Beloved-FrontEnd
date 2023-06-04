@@ -25,7 +25,10 @@ function playerdetails(event)
         err.textContent="Please enter Valid Text";
         return;
     }    
+    PlayerConfig.style.display='none';
+    backdrop.style.display='none';
 
     const UpdateUser=document.getElementById('player-'+editedplayer+'-data')
     UpdateUser.children[1].textContent=Playername;
+    players[editedplayer-1].name=Playername   
 }
