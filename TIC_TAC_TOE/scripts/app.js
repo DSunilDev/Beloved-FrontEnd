@@ -12,6 +12,11 @@ let err=document.getElementById("error")
 
 let editedplayer=0;
 
+
+let startgamebutton=document.getElementById("startgame")
+
+const gameboard=document.getElementById("active-game")
+
 editplayer1.addEventListener('click',openplayer)
 editplayer2.addEventListener('click',openplayer)
 
@@ -19,3 +24,4 @@ cancelbutton.addEventListener('click',cancelconfig)
 backdrop.addEventListener('click',cancelconfig)
 
 userform.addEventListener('submit',playerdetails)
+startgamebutton.addEventListener('click',startnewgame)
