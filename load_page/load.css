@@ -21,6 +21,33 @@ body{
     animation-fill-mode: backwards;
 }
 
+
+.hello{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    animation-name: animat;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+    animation-fill-mode:backwards;
+}
+
+@keyframes animate {
+    0%
+    {
+        transform: rotate(10deg)
+    }
+    100%
+    {
+        transform: rotate(-300deg)
+    }
+}
+
+
+
+
 @keyframes loader
 {
     0%
@@ -40,4 +67,12 @@ body{
 h2{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
+}
+
+
+.tt{
+    width:150px;
+    height:200px;
+    background-color: blue;
+
 }
